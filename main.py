@@ -8,12 +8,16 @@ def sort(sorted_lst, lst):
             if ele < current:
                 current = ele
     
-        sorted_lst.append(current)
+        sorted_lst.append(current)    # Updating lists.
         lst.remove(current)
 
+        # if nothing to sort, stop... else keep sorting.
         return sorted_lst if lst == [] else sort(sorted_lst, lst)
-    except IndexError:
+    
+    except IndexError:    # NOTE: This error only shows up for empty lists.
         return []
+
+# --- Test Cases ---
 
 print(sort([], [-1,5,3,4,0]))
 print(sort([], []))
