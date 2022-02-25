@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/sort-list/
+# Source: https://leetcode.com/problems/sort-list/
 
 def sort(sorted_lst, lst):
     try:
@@ -16,6 +16,7 @@ def sort(sorted_lst, lst):
     
     except IndexError:    # NOTE: This error only shows up for empty lists.
         return []
+
 
 # --- Test Cases ---
 
