@@ -22,3 +22,5 @@ def sort(sorted_lst, lst):
 print(sort([], [-1,5,3,4,0]))
 print(sort([], []))
 print(sort([], [5, 4, 3, 2, 1]))
+print(sort([], list(range(10))[::-1]))
+print(sort([], list(range(100))[::-1]))
